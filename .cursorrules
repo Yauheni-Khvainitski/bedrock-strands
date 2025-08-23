@@ -1,0 +1,44 @@
+# Cursor AI Rules for this project
+
+## Commit Message Format
+When generating commit messages, always follow this pattern:
+
+**Format:** `<type>: <description>`
+
+**Types:**
+- feat: new feature
+- fix: bug fix  
+- docs: documentation changes
+- style: formatting, missing semicolons, etc
+- refactor: code restructuring
+- test: adding tests
+- chore: maintenance tasks
+
+**Rules:**
+- Subject line: imperative mood, no period, <50 chars
+- For multiple changes: use bullet points in body
+- Be specific and concise
+
+**Examples:**
+```
+feat: add weather assistant with word counting
+
+- Implement Strands Agent with Claude-3-Haiku integration
+- Add custom word_count tool with logging
+- Configure National Weather Service API integration
+```
+
+```
+fix: resolve HTTP request import issue
+
+- Update import from strands_tools module
+- Fix tool registration with TOOL_SPEC pattern
+```
+
+```
+docs: update README with setup instructions
+
+- Add quick start guide
+- Document tool execution flow
+- Include AWS credentials configuration
+```

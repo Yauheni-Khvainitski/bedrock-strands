@@ -1,0 +1,8 @@
+# Amazon Bedrock AgentCore with Strands Agent dependencies
+# Created on 2025-08-23
+
+# Core Strands Agents SDK
+strands-agents==1.5.0
+
+# Strands Agents Tools (http_request, file_read, etc.)
+strands-agents-tools==0.2.4
