@@ -6,3 +6,6 @@ strands-agents==1.5.0
 
 # Strands Agents Tools (http_request, file_read, etc.)
 strands-agents-tools==0.2.4
+
+# UV package manager for uvx command
+uv>=0.8.13

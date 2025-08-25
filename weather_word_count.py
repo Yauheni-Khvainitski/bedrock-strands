@@ -7,7 +7,6 @@ from strands import Agent, tool
 from strands.models import BedrockModel
 from strands_tools import http_request
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 load_dotenv("config_files/.env")
