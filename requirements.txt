@@ -9,3 +9,9 @@ strands-agents-tools==0.2.4
 
 # UV package manager for uvx command
 uv>=0.8.13
+
+# Bedrock AgentCore
+bedrock-agentcore>=0.1.2
+
+# Bedrock AgentCore studying materials
+bedrock-agentcore-starter-toolkit
