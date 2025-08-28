@@ -1,0 +1,30 @@
+default_agent: multimodal_data_agent
+agents:
+  multimodal_data_agent:
+    name: multimodal_data_agent
+    entrypoint: /Users/ykhvainitski/repos/bedrock-strands/ac_runtime_data_analysis/multimodal_data_agent.py
+    platform: linux/arm64
+    container_runtime: docker
+    aws:
+      execution_role: arn:aws:iam::538213298977:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-069e2d958e
+      execution_role_auto_create: false
+      account: '538213298977'
+      region: us-east-1
+      ecr_repository: 538213298977.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-multimodal_data_agent
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: multimodal_data_agent-AlPLKT63c4
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:538213298977:runtime/multimodal_data_agent-AlPLKT63c4
+      agent_session_id: 06df269e-263c-4c5e-a721-77c9672f67ac
+    codebuild:
+      project_name: bedrock-agentcore-multimodal_data_agent-builder
+      execution_role: arn:aws:iam::538213298977:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-069e2d958e
+      source_bucket: bedrock-agentcore-codebuild-sources-538213298977-us-east-1
+    authorizer_configuration: null
+    oauth_configuration: null
